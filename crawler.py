@@ -33,11 +33,11 @@ def main():
     for page_nr in range(300):
         print "Now at page %s ..." % (page_nr,)
         links = fetch_and_parse_searchpage(page_nr)
-        time.sleep(1)
+        #time.sleep(1)
         for link in links:
             print link
             fetch_and_store_json(link)
-            time.sleep(1)
+            #time.sleep(1)
 
 if __name__ == '__main__':
     main()
