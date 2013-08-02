@@ -30,7 +30,7 @@ def fetch_and_store_json(dataset_url):
         data_file.write(data)
 
 def main():
-    for page_nr in range(0..300):
+    for page_nr in range(300):
         print "Now at page %s ..." % (page_nr,)
         links = fetch_and_parse_searchpage(page_nr)
         time.sleep(1)
