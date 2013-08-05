@@ -51,7 +51,7 @@ def result_to_record(result):
 
 def tsv_escape(text):
     if text is not None:
-        return u'"' + text.replace('\n', ' ').replace('\t', ' ').replace('\r', '').replace(u'"', u'\\"') + u'"'
+        return u'"' + text.replace('\n', ' ').replace('\t', ' ').replace('\r', '').replace(u'"', u'') + u'"'
     else:
         return u''
 
